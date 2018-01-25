@@ -1,4 +1,4 @@
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class Bar;
 
@@ -10,5 +10,5 @@ public:
   int getB();
 private:
   int a;
-  boost::shared_ptr<Bar> bar;
+  std::shared_ptr<Bar> bar;
 };
